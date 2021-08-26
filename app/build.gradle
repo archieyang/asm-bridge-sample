@@ -28,6 +28,12 @@ android {
     }
 }
 
+apply plugin: 'com.github.archieyang.asm-bridge'
+
+asmBridge {
+    implementation = "me.codethink.asmbridge.sample.CustomAdapter"
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
